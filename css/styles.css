@@ -1,0 +1,263 @@
+body {
+    font-family: Avenir,Garamond;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    text-align: center;
+  
+}
+
+#home {
+    background: url(../img/LoneActor.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: auto;
+    color: #ffffff;
+
+
+}
+
+#raise {
+    
+    position: absolute;
+    top: 13%;
+    left: 45%;
+    display:inline-block;
+    width: 30vw;
+
+   
+
+}
+
+.reveal {
+    
+    animation: appear 2s forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+.reveal:hover {
+    animation: appear 1s;
+    opacity:0;
+}
+
+
+
+@keyframes appear{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+
+#curtain {
+    width: 100%;
+    top: 0;
+    height: 100vh;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    top: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    z-index: 100;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.text-box {
+    text-shadow: 2px 4px 5px rgba(0, 0,0,0.9);
+    font-variant: small-caps;
+    color: #ffffff;
+    letter-spacing: 5pt;
+    margin: 6%;
+    margin-bottom: 0;
+    height: 70vh;
+    
+}
+
+p {
+    font-size: 1em;
+    margin: 5%;
+}
+
+#text-modify2 {
+    margin-top: 8%;
+    margin-left: -4%;
+    font-size: 1.55em;
+}
+
+@media screen and (max-width: 600px) {
+    span {
+        font-size:30px;
+    }
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    color: #CCC;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Amatic SC', sans-serif;
+    letter-spacing: 17.5px;
+}
+
+.hero-one {
+    top: 0;
+    position: absolute;
+    width: 60%;
+    background-color: black;
+    height: 100vh;
+    clip-path: polygon(0 0, 60vw 0, 40vw 100vh, 0 100vh);
+    z-index: 1;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/markup.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-two {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    background-color: green;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.5)), url(../img/keyboard.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-title {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex: auto;
+    font-size: 6vw;
+}
+
+.header-primary {
+    font-size: 2em;
+    display: block;
+    font-weight: 700;
+}
+
+#title-card {
+    text-align:center;
+    margin-top: 18vh;
+
+}
+
+.plain-jane {
+    padding: 10%;
+}
+
+#id {
+    font-size: 4vw;
+}
+
+.band {
+    width: 35%;
+    max-width: 1240px;
+    margin: 0 auto;
+    margin-bottom: 12%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
+    @media (min-width: 30em) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 60em) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+.card {
+    background: white;
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+}
+
+.card:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+            
+
+article {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.band h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+}
+
+.band p {
+    flex: 1;
+    line-height: 1.4;
+}
+
+.band span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin: 2em 0 0 0;
+}
+
+.thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center;
+    background-image:url(../img/pythonLogo.jpg);
+}
+
+footer {
+    padding:2%;
+    background-color: #ccc7d1;
+
+}
