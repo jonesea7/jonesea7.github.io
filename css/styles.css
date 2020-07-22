@@ -260,6 +260,13 @@ article {
     background-image:url(../img/pythonLogo.jpg);
 }
 
+#poem-layout {
+    text-align: right;
+    font-size: 2vw;
+    padding: 3%;
+    letter-spacing: 2px;
+}
+
 footer {
     padding:2%;
     background-color: #ccc7d1;
