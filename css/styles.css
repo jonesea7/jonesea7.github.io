@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     width: auto;
-    text-align: center;
+    text-align: left;
   
 }
 
@@ -178,12 +178,34 @@ p {
 
 }
 
+header {
+    width: 75%;
+    height: fit-content;
+    background-color: red;
+    border: 2px solid black;
+    box-shadow: 5px 10px black;
+    margin: 3% auto;
+    font-size: 09vw;
+    text-align: center;
+    color: whitesmoke;
+    padding: .25em;
+}
+
+hr {
+    width: 80%;
+}
+
 .plain-jane {
     padding: 10%;
 }
 
-#font-grow {
-    font-size: 4vw;
+#font-viewport {
+    font-size: 4.5vw;
+}
+
+#input-joke-container {
+    width: 20vw;
+    padding: .5em;
 }
 
 .band {
