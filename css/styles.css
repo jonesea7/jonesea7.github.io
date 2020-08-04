@@ -104,6 +104,7 @@ p {
 
 #projects {
     margin: 10%;
+    background-image: url(../img/19.jpg);
 }
 
 #text-modify2 {
@@ -179,16 +180,17 @@ p {
 }
 
 header {
-    width: 75%;
+    width: 55%;
     height: fit-content;
-    background-color: red;
+    background-image: url(../img/06.jpg);
+    background-size: cover;
     border: 2px solid black;
     box-shadow: 5px 10px black;
     margin: 3% auto;
     font-size: 34px;
     text-align: center;
     color: whitesmoke;
-    padding: .25em;
+    padding: .35em;
 }
 
 #projects {
@@ -197,6 +199,7 @@ header {
 
 hr {
     width: 80%;
+    margin: 5%;
 }
 
 .plain-jane {
