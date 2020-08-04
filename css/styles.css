@@ -263,7 +263,14 @@ section:nth-child(6) {
     grid-column:  span 4;
     background-image: url(../img/06v2.jpg);
     background-size: cover;
+    
 }
+
+section:nth-child(6):hover {
+    transition: transform 1s;
+    transform: translateY(-10);
+}
+
 section:nth-child(7) {
     grid-column: span 3;
     grid-row: span 3;
@@ -306,10 +313,7 @@ section:nth-child(15) {
     grid-row: span 3;
     background-image: url(../img/15.jpg);
 }
-section:nth-child(19) {
-    grid-column: span 3;
-    background-image: url(../img/16.jpg);
-}
+
 section:nth-child(16) {
     grid-row: span 2;
     grid-column: span 2;
@@ -323,10 +327,13 @@ section:nth-child(17) {
 section:nth-child(18) {
     grid-row: span 3;
     grid-column: span 3;
-    background-image: url(../img/19v2.jpg);
-    
+    background-image: url(../img/19v2.jpg);    
 }
 
+section:nth-child(19) {
+    grid-column: span 3;
+    background-image: url(../img/16.jpg); /* (see (16,17,18) this was originally child 16 that is why the image number does not match*/
+}
 section:nth-child(20) {
     grid-row: span 3;
     background-image: url(../img/20.jpg);

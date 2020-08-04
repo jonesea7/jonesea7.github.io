@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pop's Pizza Place</title>
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+		<meta content="width=device-width,initial-scale=1.0" name="viewport">
+        <link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+        <header>
+            
+            <h1>POP'S PIZZA PLACE</h1>
+            
+        </header>
+        <form id="frmMenu">
+            <div class="grid-field">
+                <section id="pizza-size-card">
+                        <h3 class="card-banner">Size:</h3>
+                        <img src="img/pizzasize.png" alt="Pizza w/Arrows"><br>
+                        <div class="text-container">
+                            <input class="size" type="radio" name="Size" value="Personal Pizza"> Personal Pizza<br>
+                            <input class="size" type="radio" name="Size" value="Medium Pizza"> Medium Pizza<br>
+                            <input class="size" type="radio" name="Size" value="Large Pizza" checked> Large Pizza<br>
+                            <input class="size" type="radio" name="Size" value="Extra Large Pizza"> Extra Large Pizza<br>
+                        </div>
+                </section>
+                <section id="meat-card">
+                        <h3 class="card-banner">Meats:</h3>
+                        <img src="img/pepperoni.jpg" alt="Meats"><br>
+                        <div class="text-container">
+                            <input class="meats" type="checkbox" name="Meat" value="Pepperoni"> Pepperoni<br>
+                            <input class="meats" type="checkbox" name="Meat" value="Sausage"> Sausage <br>
+                            <input class="meats" type="checkbox" name="Meat" value="Canadian Bacon"> Canadian Bacon<br> 
+                            <input class="meats" type="checkbox" name="Meat" value="Ground Beef"> Ground Beef<br>
+                            <input class="meats" type="checkbox" name="Meat" value="Anchovy"> Anchovy<br>
+                            <input class="meats" type="checkbox" name="Meat" value="Chicken"> Chicken<br>
+                        </div>
+                </section>
+                <section id="cheese-card">
+                    <h3 class="card-banner">Cheese:</h3>
+                    <img src="img/cheese.jpg" alt="Cheese"><br>
+                    <div class="text-container">
+                        <input class="cheese" type="radio" name="Cheese" value="No Cheese">No Cheese<br>
+                        <input class="cheese" type="radio" name="Cheese" value="Regular Cheese">Regular Cheese<br>
+                        <input class="cheese" type="radio" name="Cheese" value="Extra Cheese">Extra Cheese<br>
+                    </div>
+                </section>
+                <section id="crust-card">
+                    <h3 class="card-banner">Crust:</h3>
+                    <img src="img/crust.jpg" alt="Crust"><br>
+                    <div class="text-container">
+                        <input class="crust" type="radio" name="Crust" value="Plain Crust">Plain Crust<br>
+                        <input class="crust" type="radio" name="Crust" value="Garlic Butter Crust">Garlic Butter Crust<br>
+                        <input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust">Cheese Stuffed Crust<br>
+                        <input class="crust" type="radio" name="Crust" value="Spicy Crust">Spicy Crust<br>
+                        <input class="crust" type="radio" name="Crust" value="House Special Crust">House Special Crust<br>
+                    </div>
+                </section>
+                <section id="sauce-card">
+                    <h3 class="card-banner">Sauce:</h3>
+                    <img src="img/sauce.jpg" alt="Sauce"><br>
+                    <div class="text-container">
+                        <input class="sauce" type="radio" name="Sauce" value="Marinara Sauce">Marinara Sauce<br>
+                        <input class="sauce" type="radio" name="Sauce" value="White Sauce">White Sauce<br>
+                        <input class="sauce" type="radio" name="Sauce" value="Barbeque Sauce">Barbeque Sauce<br>
+                        <input class="sauce" type="radio" name="Sauce" value="No Sauce">No Sauce<br>
+                    </div>
+                </section>
+                <section id="veggies-card">
+                    <h3 class="card-banner">Veggies</h3>
+                    <img src="img/veggies.jpg" alt="Veggies" ><br>
+                    <div class="text-container">
+                        <input class="veggie" type="checkbox" name="Veggie" value="Tomatoes">Tomatoes <br>
+                        <input class="veggie" type="checkbox" name="Veggie" value="Onions">Onions<br>
+                        <input class="veggie" type="checkbox" name="Veggie" value="Green Peppers">Green Peppers<br>
+                        <input class="veggie" type="checkbox" name="Veggie" value="Mushrooms">Mushrooms<br>
+                        <input class="veggie" type="checkbox" name="Veggie" value="Pineapple">Pineapple<br>
+                        <input class="veggie" type="checkbox" name="Veggie" value="Spinach">Spinach<br>
+                        <input class="veggie" type="checkbox" name="Veggie" value="Jalepeno">Jalepeno<br>
+                    </div>
+                </section>  
+            
+           
+            </div>
+        </form> 
+        <div id="cart">
+                <section id="order-card">
+                    <h3 class="card-banner">Order:</h3>
+                    <div class="text-container">
+                        <h3 id="showText"></h3>
+                        <h3 id="totalPrice"></h3>
+                    </div>
+                    <button id="btnOrder" onclick="getReceipt()">Place Order</button>
+                </section>
+            </div>   
+        <script src="./js/finalDrill.js"></script>
+	</body>
+</html>
