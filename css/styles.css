@@ -13,13 +13,13 @@ body {
 }
 
 #home {
-    background: url(../img/LoneActor.jpg);
+    /*background: url(../img/crackedPaintBg.jpg);*/
     background-attachment: fixed;
     background-size: cover;
     position: relative;
     width: 100%;
-    height: auto;
-    color: #ffffff;
+    height: 1400px;
+    color: #292727;
 
 
 }
@@ -31,7 +31,7 @@ body {
     left: 45%;
     display:inline-block;
     width: 30vw;
-
+    color: whitesmoke;
    
 
 }
@@ -61,6 +61,7 @@ body {
     width: 100%;
     top: 0;
     height: 100vh;
+    color: whitesmoke;
 
 }
 
@@ -276,7 +277,7 @@ main {
 }
 #about-me-8 {
     grid-row: span 3;
-    background-image: url(../img/14.jpg);
+    background-image: url(../img/paintedWall.jpg);
 }
 #about-me-10 {
     grid-row: span 4;
@@ -285,7 +286,7 @@ main {
 #about-me-11 {
     grid-row: span 4;
     grid-column: span 4;
-    background-image: url(../img/05.jpg); /* Maybe just do a icon for each skill and apply to a colorl*/
+    background-image: url(../img/pollack.jpg); /* Maybe just do a icon for each skill and apply to a colorl*/
     background-size: cover;
 }
 #about-me-12 {
@@ -301,7 +302,7 @@ main {
 #about-me-14 {
     grid-row: span 3;
     grid-column: span 2;
-    background-image: url(../img/14.jpg);
+    background-image: url(../img/paintedWall.jpg);
     background-size: cover;
 }
 
@@ -441,4 +442,11 @@ section:nth-child(21):hover {
     position: relative;
     top: 0;
     transition: all .1s ease-in;
+}
+
+footer {
+    background-image: url(../img/paintedWall.jpg);
+    margin-top: 4em;
+    background-size: cover;
+    font-family: 'Cabin Sketch', cursive;
 }
