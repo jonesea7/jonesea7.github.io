@@ -1,3 +1,8 @@
+/* font-family: 'Cabin Sketch', cursive;
+font-family: 'Chelsea Market', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Londrina Sketch', cursive; */
+
 body {
     font-family: Avenir,Garamond;
     margin: 0;
@@ -94,17 +99,27 @@ li a:hover {
     margin: 6%;
     margin-bottom: 0;
     height: 84vh;
+    font-family: 'Great Vibes';
     
 }
 
 p {
-    font-size: 1em;
     margin: 5%;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 600;
 }
 
 #projects {
-    margin: 10%;
-    background-image: url(../img/19.jpg);
+    background-image: none;
+    text-align: start;
+    border: none;
+    box-shadow: none;
+    width: auto;
+    height: auto;
+    font-size: 47px;
+    padding: inherit;
+    color: black;
+    font-weight: 900;
 }
 
 #text-modify2 {
@@ -191,11 +206,10 @@ header {
     text-align: center;
     color: whitesmoke;
     padding: .35em;
+    font-family: 'Londrina Sketch', 'arial', cursive;
 }
 
-#projects {
-    background-color: blue;
-}
+
 
 hr {
     width: 80%;
@@ -215,7 +229,7 @@ hr {
     padding: .5em;
 }
 
-#grid-field-margin {
+.grid-field-container {
     max-width: 800px;
     margin: 0 auto;
 }
