@@ -104,7 +104,8 @@ li a:hover {
 }
 
 p {
-    margin: 5%;
+    margin: inherit;
+    padding: 1em;
     font-family: 'Fredericka the Great', cursive;
     font-weight: 600;
 }
@@ -197,15 +198,10 @@ p {
 header {
     width: 55%;
     height: fit-content;
-    background-image: url(../img/06.jpg);
     background-size: cover;
-    border: 2px solid black;
-    box-shadow: 5px 10px black;
-    margin: 3% auto;
-    font-size: 34px;
+    font-size: 56px;
     text-align: center;
     color: whitesmoke;
-    padding: .35em;
     font-family: 'Londrina Sketch', 'arial', cursive;
 }
 
@@ -239,6 +235,74 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     grid-auto-rows: 80px;
     grid-auto-flow: dense;
+}
+
+#about-me-1 {
+    grid-column: span 5;
+    background-image: url(../img/06.jpg);
+    
+}
+
+#about-me-2 {
+    grid-column: span 3;
+    background-image: url(../img/01.jpg);    
+}
+
+#about-me-3 {
+    grid-column: span 2;
+    background-image: url(../img/14.jpg);    
+}
+#about-me-4 {
+    grid-row: span 3;
+    background-image: url(../img/08.jpg);
+}
+#about-me-5 {
+    grid-row: span 5;
+    grid-column: span 5;
+    background-image: url(../img/07.jpg);
+}
+#about-me-6 {
+    grid-row: span 5;
+    grid-column: span 3;
+    background-image: url(../img/06.jpg); /*add skills icons here to yellow 06.jpg*/
+}
+#about-me-7 {
+    grid-row: span 2;
+    background-image: url(../img/09.jpg);
+}
+#about-me-9 {
+    grid-row: span 2;
+    background-image: url(../img/19.jpg);
+}
+#about-me-8 {
+    grid-row: span 3;
+    background-image: url(../img/14.jpg);
+}
+#about-me-10 {
+    grid-row: span 4;
+    background-image: url(../img/05.jpg);
+}
+#about-me-11 {
+    grid-row: span 4;
+    grid-column: span 4;
+    background-image: url(../img/05.jpg); /* Maybe just do a icon for each skill and apply to a colorl*/
+    background-size: cover;
+}
+#about-me-12 {
+    grid-column: span 5;
+    background-image: url(../img/19.jpg);
+}
+#about-me-13 {
+    grid-row: span 3;
+    grid-column: span 3;
+    background-image: url(../img/nameLogo.png);
+    background-size: cover;
+}
+#about-me-14 {
+    grid-row: span 3;
+    grid-column: span 2;
+    background-image: url(../img/14.jpg);
+    background-size: cover;
 }
 
 
