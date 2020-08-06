@@ -24,10 +24,10 @@ body {
 }
 
 .stage-text {
-    font-size: 40px;
+    font-size: 7vw;
     color: whitesmoke;
     text-align: center;
-    padding: 3em;
+    margin: 10vh;
 }
 
 #raise {
