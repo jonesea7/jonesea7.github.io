@@ -13,7 +13,7 @@ body {
 }
 
 #home {
-    /*background: url(../img/crackedPaintBg.jpg);*/
+    background-image: url(../img/mercEd.jpg);
     background-attachment: fixed;
     background-size: cover;
     position: relative;
@@ -21,6 +21,13 @@ body {
     height: 1400px;
     color: #292727;
 
+}
+
+.stage-text {
+    font-size: 40px;
+    color: whitesmoke;
+    text-align: center;
+    padding: 3em;
 }
 
 #raise {
@@ -62,6 +69,11 @@ body {
 
 }
 
+nav {
+    position: sticky;
+    top: 0;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -75,6 +87,7 @@ ul {
 
 li {
     float: left;
+    padding: .5em;
 }
 
 li a {
@@ -135,7 +148,7 @@ p {
 
 .hero {
     width: 100vw;
-    height: 100vh;
+    height: 40vh;
     text-align: center;
     color: #CCC;
     position: relative;
@@ -149,7 +162,7 @@ p {
     position: absolute;
     width: 60%;
     background-color: black;
-    height: 100vh;
+    height: 61.35vh;
     clip-path: polygon(0 0, 60vw 0, 40vw 100vh, 0 100vh);
     z-index: 1;
     background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/markup.jpg);
@@ -164,7 +177,7 @@ p {
     right: 0;
     width: 60%;
     background-color: green;
-    height: 100vh;
+    height: 62vh;
     background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.5)), url(../img/keyboard.jpg);
     background-size: cover;
     background-repeat: no-repeat;
