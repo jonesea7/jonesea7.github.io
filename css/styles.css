@@ -308,9 +308,14 @@ button {
     border-radius: 5%;
     box-shadow: 2px 3px 8px inset #888888;
     font-family: 'Chelsea Market';
+    transition-duration: .5s;
+    transition-delay: .3s ;
     
 }
 
+button:hover {
+    transform: translateY(5px);
+}
 
 section {
     border: 4px solid black;
