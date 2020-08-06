@@ -1,3 +1,8 @@
+/* font-family: 'Cabin Sketch', cursive;
+font-family: 'Chelsea Market', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Londrina Sketch', cursive; */
+
 body {
     font-family: Avenir,Garamond;
     margin: 0;
@@ -8,14 +13,13 @@ body {
 }
 
 #home {
-    background: url(../img/LoneActor.jpg);
+    /*background: url(../img/crackedPaintBg.jpg);*/
     background-attachment: fixed;
     background-size: cover;
     position: relative;
     width: 100%;
-    height: auto;
-    color: #ffffff;
-
+    height: 1400px;
+    color: #292727;
 
 }
 
@@ -25,7 +29,8 @@ body {
     top: 13%;
     left: 45%;
     display:inline-block;
-    width: 30vw;  
+    width: 30vw;
+	color: white;
 }
 
 .reveal {
@@ -53,6 +58,7 @@ body {
     width: 100%;
     top: 0;
     height: 100vh;
+    color: whitesmoke;
 
 }
 
@@ -91,17 +97,28 @@ li a:hover {
     margin: 6%;
     margin-bottom: 0;
     height: 84vh;
+    font-family: 'Great Vibes';
     
 }
 
 p {
-    font-size: 1em;
-    margin: 5%;
+    margin: inherit;
+    padding: 1em;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 600;
 }
 
 #projects {
-    margin: 10%;
-    background-image: url(../img/19.jpg);
+    background-image: none;
+    text-align: start;
+    border: none;
+    box-shadow: none;
+    width: auto;
+    height: auto;
+    font-size: 47px;
+    padding: inherit;
+    color: black;
+    font-weight: 900;
 }
 
 #text-modify2 {
@@ -179,20 +196,14 @@ p {
 header {
     width: 55%;
     height: fit-content;
-    background-image: url(../img/06.jpg);
     background-size: cover;
-    border: 2px solid black;
-    box-shadow: 5px 10px black;
-    margin: 3% auto;
-    font-size: 34px;
+    font-size: 56px;
     text-align: center;
     color: whitesmoke;
-    padding: .35em;
+    font-family: 'Londrina Sketch', 'arial', cursive;
 }
 
-#projects {
-    background-color: blue;
-}
+
 
 hr {
     width: 80%;
@@ -212,7 +223,7 @@ hr {
     padding: .5em;
 }
 
-#grid-field-margin {
+.grid-field-container {
     max-width: 800px;
     margin: 0 auto;
 }
@@ -222,6 +233,74 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     grid-auto-rows: 80px;
     grid-auto-flow: dense;
+}
+
+#about-me-1 {
+    grid-column: span 5;
+    background-image: url(../img/06.jpg);
+    
+}
+
+#about-me-2 {
+    grid-column: span 3;
+    background-image: url(../img/01.jpg);    
+}
+
+#about-me-3 {
+    grid-column: span 2;
+    background-image: url(../img/14.jpg);    
+}
+#about-me-4 {
+    grid-row: span 3;
+    background-image: url(../img/08.jpg);
+}
+#about-me-5 {
+    grid-row: span 5;
+    grid-column: span 5;
+    background-image: url(../img/07.jpg);
+}
+#about-me-6 {
+    grid-row: span 5;
+    grid-column: span 3;
+    background-image: url(../img/06.jpg); /*add skills icons here to yellow 06.jpg*/
+}
+#about-me-7 {
+    grid-row: span 2;
+    background-image: url(../img/09.jpg);
+}
+#about-me-9 {
+    grid-row: span 2;
+    background-image: url(../img/19.jpg);
+}
+#about-me-8 {
+    grid-row: span 3;
+    background-image: url(../img/paintedWall.jpg);
+}
+#about-me-10 {
+    grid-row: span 4;
+    background-image: url(../img/05.jpg);
+}
+#about-me-11 {
+    grid-row: span 4;
+    grid-column: span 4;
+    background-image: url(../img/pollack.jpg); /* Maybe just do a icon for each skill and apply to a colorl*/
+    background-size: cover;
+}
+#about-me-12 {
+    grid-column: span 5;
+    background-image: url(../img/19.jpg);
+}
+#about-me-13 {
+    grid-row: span 3;
+    grid-column: span 3;
+    background-image: url(../img/nameLogo.png);
+    background-size: cover;
+}
+#about-me-14 {
+    grid-row: span 3;
+    grid-column: span 2;
+    background-image: url(../img/paintedWall.jpg);
+    background-size: cover;
 }
 
 
@@ -360,4 +439,11 @@ section:nth-child(21):hover {
     position: relative;
     top: 0;
     transition: all .1s ease-in;
+}
+
+footer {
+    background-image: url(../img/paintedWall.jpg);
+    margin-top: 4em;
+    background-size: cover;
+    font-family: 'Cabin Sketch', cursive;
 }
