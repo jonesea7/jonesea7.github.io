@@ -27,11 +27,11 @@
             <div>For many years <br>I have entertained the masses.<br>
                 Now, I am prepared for my most challenging role yet...</div>
         </div>
-        <div class='hero'>
+        <!-- <div class='hero'>
                     <div class="hero-one"></div>
                     <div class="hero-two"></div>
                     <h1 class="header-title"><span class="header-primary"></span>Software Developer</h1>
-        </div>
+        </div> -->
 <!-- 
         
             <div class="text-box">
@@ -46,17 +46,39 @@
             </div> -->
     </div>
     
-    <nav>
-        <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <br>
-    <hr>
-    <br>
+    <div class="menu-container">
+        <input type="checkbox" class="menu-trigger">
+        <div class="animated-hamburger"><div></div></div>
+        <nav>
+            <div>
+                <div>
+                    <ul class="accordion-container">
+                        <li class="accordion-item" id="aboutme">
+                            <a href="#about" class="sub-menu-trigger">AboutMe</a>
+                            <div class="sub-menu">
+                                <a href="">All</a>
+                                <a href="">Current</a>
+                            </div>
+                        </li>
+                        <li class="accordion-item" id="projects-trigger">
+                            <a href="#projects" class="sub-menu-trigger">Projects</a>
+                            <div class="sub-menu">
+                                <a href="">About</a>
+                                <a href="">Company Members</a>
+                            </div>
+                        </li>
+                        <li class="accordion-item" id="history">
+                            <a href="http://www.edmundalynjones.com/brainflowers" class="sub-menu-trigger">Blog</a>
+                            <div class="sub-menu">
+                                <a href="">Archives</a>
+                                <a href="">News</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
 
 
     

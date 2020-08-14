@@ -72,12 +72,225 @@ body {
 
 }
 
-nav {
-    position: sticky;
+/*This is the container for the entire menu/navbar*/
+
+
+.menu-container {
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* visibility: hidden; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-ul {
+/*hide the nav bar, do this last so that you can see styling while working*/
+
+.menu-container nav {
+    visibility: hidden;
+}
+
+/*enlarge the area for the checkbox to about the size of a hamburger icon*/
+
+.menu-container .menu-trigger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+/* SECTION CONTAINING ANIMATION INSTRUCTIONS WHEN CHECK BOX IS CHECKED OR TRIGGERED */
+
+.menu-container .menu-trigger:checked ~ nav {
+    visibility: visible;
+}
+
+.menu-container .menu-trigger:checked ~ nav > div {
+    transform: scale(1);
+    transition: 0.4s ease;
+}
+
+.menu-container .menu-trigger:checked ~ nav > div > div {
+    opacity: 1;
+    transition: 0.4s ease;
+}
+
+/* END OF CHECKBOX TRANSITIONS */
+
+/* THIS AFFECTS THE CONTAINER OF THE CONTAINER FOR THE UL 
+    the transform: scale() is what gives it the cool growing circle effect */
+
+.menu-container nav > div {
+    background-color:  rgba(255, 0, 0, 0.75);
+    width: 200vw;
+    height: 135vh;
+    /* display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center; */
+    border-radius: 70%;
+    transform: scale(0);
+    transition: all 0.4s ease;
+}
+
+/* this is the layer directly above the ul this adds another layer
+    of animation to the screen when the checkbox is triggered */
+
+.menu-container nav > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/* this is the styling for the items in the li */
+
+.menu-container nav > div > div > ul > li {
+    list-style: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+/* further detailed styling for the <a> links in the <li> */
+.menu-container nav > div > div > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+.accordion-container {
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sub-menu-trigger {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+ .sub-menu {
+     background: rgb(37, 37, 37);
+     overflow: hidden;
+     margin: 0.5rem;
+     border-radius: 0.5rem;
+     transition: max-height 0.4s;
+     max-height: 0;
+ }
+
+ .sub-menu a {
+     display: block;
+     padding: 1rem 1.5rem;
+     color: white;
+     font-size: 0.9rem;
+     margin: 0.2rem 0;
+     position: relative;
+     text-decoration: none;
+ }
+
+ .sub-menu a:nth-child(odd) {
+     background-color: black;
+ }
+
+ .sub-menu a::before {
+     content: "";
+     position: absolute;
+     width: 0.3rem;
+     height: 100%;
+     background-color: rgb(250, 245, 245);
+     top: 0;
+     left: 0;
+     transition: 0.4s;
+     opacity: 0;
+ }
+
+ .sub-menu a:hover::before {
+     opacity: 1;
+     
+ }
+
+ .accordion-item:target .sub-menu {
+     max-height: 12rem;
+ }
+
+ 
+     /* the styling to build the animated-hamburger */
+.menu-container .animated-hamburger {
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 60px; /*This covers the height of the the checkbox .menu-trigger*/
+    width: 60px;
+    background-color: red;
+    opacity: 0.75;
+    padding: 1rem;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-container .animated-hamburger > div {
+    height: 2px;
+    width: 100%;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+/*Top and bottom lines of the hamburer*/
+
+.menu-container .animated-hamburger > div:before,
+.menu-container .animated-hamburger > div:after {
+    content:'';
+    position: absolute;
+    z-index: 2; 
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+}
+
+/*Moves top line down */
+
+.menu-container .animated-hamburger > div:after {
+    top: 10px;
+}
+
+.menu-container .menu-trigger:checked ~ .animated-hamburger > div {
+    transform: rotate(135deg);
+}
+
+/* Turn into an X */
+
+.menu-container .menu-trigger:checked ~ .animated-hamburger > div:before,
+.menu-container .menu-trigger:checked ~ .animated-hamburger > div::after {
+    transform: rotate(90deg);
+    width: 70%;
+}
+
+/*nav {
+    position: sticky;
+    top: 0;
+}*/
+
+/* ul {
     list-style-type: none;
     margin: 0;
     top: 0;
@@ -103,7 +316,7 @@ li a {
 
 li a:hover {
     background-color: #111;
-}
+} */
 
 .text-box {
     text-shadow: 2px 4px 5px rgba(0, 0,0,0.9);
@@ -241,7 +454,8 @@ hr {
 
 .grid-field-container {
     max-width: 800px;
-    margin: 25% auto;
+    margin: 10% auto;
+    color: black;
 }
 
 main {
@@ -476,3 +690,4 @@ footer {
     background-size: cover;
     font-family: 'Cabin Sketch', cursive;
 }
+
